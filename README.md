@@ -75,4 +75,5 @@ This folder contains a fully functional Streamlit-based version of the FINEDICA 
 ---
 For any issues or questions, contact the FINEDICA development team.
 
+git add <conflicted-files>
 git rebase --continue

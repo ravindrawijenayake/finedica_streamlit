@@ -296,7 +296,7 @@ elif page == "Avatar Generation":
         if st.button("Remove Avatar"):
             avatar_path.unlink(missing_ok=True)
             st.success("Avatar removed.")
-            st.experimental_rerun()
+            st.rerun()
     st.subheader("Upload a Face Image to Generate Avatar")
     uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
     if uploaded_file is not None:
