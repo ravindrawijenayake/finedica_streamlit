@@ -1,0 +1,13 @@
+# Ignore Python virtual environments
+expenditure/expenditure_venv/
+venv/
+.env/
+__pycache__/
+*.pyc
+# Ignore log files
+*.log
+# Ignore database files (if not needed in repo)
+*.db
+# Ignore uploads and generated avatars (if not needed in repo)
+avatars/
+uploads/

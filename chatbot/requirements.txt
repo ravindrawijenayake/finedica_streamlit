@@ -1,0 +1,8 @@
+flask
+flask-cors
+torch
+nltk
+scikit-learn
+requests
+llama-index
+mysql-connector-python

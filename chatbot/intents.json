@@ -1,0 +1,24 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hi", "Hello", "Hey", "Greetings", "Good day", "What's up?", "How are you?", "Let's talk"],
+			"responses": ["Hello! How can I assist you with your financial goals today?", "Hi there! Ready to tackle some financial planning?"]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Goodbye", "Bye", "See you later", "Farewell", "Talk to you soon", "Thanks"],
+			"responses": ["Goodbye! Stay financially savvy!", "Wishing you financial success! See you next time!"]
+		},
+		{
+			"tag": "self_finance",
+			"patterns": ["How do I manage my own finances?", "Self-finance tips", "How can I be financially independent?", "Tell me about financial independence", "How do I handle my own money?"],
+			"responses": ["Self-financing starts with budgeting, saving, and investing wisely. Let’s explore strategies to help you achieve financial independence."]
+		},
+		{
+			"tag": "passive_income",
+			"patterns": ["How can I earn passive income?", "Passive income ideas", "Best passive income sources", "Ways to make money without working", "How do I generate income passively?"],
+			"responses": ["Rental properties, dividend stocks, and side businesses are great ways to generate income with minimal effort."]
+		}
+	]
+}

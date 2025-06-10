@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Budget Form</title>
+  <style>
+    body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+    h2 { margin-top: 40px; }
+    input { width: 120px; margin-bottom: 5px; }
+    label { display: inline-block; width: 200px; }
+  </style>
+</head>
+<body>
+  <h1>Enter Monthly Budget</h1>
+  <form action="/" method="POST">
+
+    <h2>Income</h2>
+    <label>Salary:</label><input type="number" name="salary" step="any"><br>
+    <label>Dividends:</label><input type="number" name="dividends" step="any"><br>
+    <label>State Pension:</label><input type="number" name="statePension" step="any"><br>
+    <label>Pension:</label><input type="number" name="pension" step="any"><br>
+    <label>Benefits:</label><input type="number" name="benefits" step="any"><br>
+    <label>Other Income:</label><input type="number" name="otherIncome" step="any"><br>
+
+    <h2>Home Expenses</h2>
+    <label>Gas:</label><input type="number" name="gas"><br>
+    <label>Electric:</label><input type="number" name="electric"><br>
+    <label>Oil:</label><input type="number" name="oil"><br>
+    <label>Water:</label><input type="number" name="water"><br>
+    <label>Council Tax:</label><input type="number" name="councilTax"><br>
+    <label>Phone:</label><input type="number" name="phone"><br>
+    <label>Internet:</label><input type="number" name="internet"><br>
+    <label>Mobile Phone:</label><input type="number" name="mobilePhone"><br>
+    <label>Food:</label><input type="number" name="food"><br>
+    <label>Other Home:</label><input type="number" name="otherHome"><br>
+
+    <h2>Travel Expenses</h2>
+    <label>Petrol:</label><input type="number" name="petrol"><br>
+    <label>Car Tax:</label><input type="number" name="carTax"><br>
+    <label>Insurance:</label><input type="number" name="carInsurance"><br>
+    <label>Maintenance:</label><input type="number" name="maintenance"><br>
+    <label>Public Transport:</label><input type="number" name="publicTransport"><br>
+    <label>Other Travel:</label><input type="number" name="otherTravel"><br>
+
+    <h2>Miscellaneous</h2>
+    <label>Social:</label><input type="number" name="social"><br>
+    <label>Holidays:</label><input type="number" name="holidays"><br>
+    <label>Gym:</label><input type="number" name="gym"><br>
+    <label>Clothing:</label><input type="number" name="clothing"><br>
+    <label>Other Misc:</label><input type="number" name="otherMisc"><br>
+
+    <h2>Children's Expenses</h2>
+    <label>Nursery:</label><input type="number" name="nursery"><br>
+    <label>Childcare:</label><input type="number" name="childcare"><br>
+    <label>School Fees:</label><input type="number" name="schoolFees"><br>
+    <label>Uni Costs:</label><input type="number" name="uniCosts"><br>
+    <label>Maintenance:</label><input type="number" name="childMaintenance"><br>
+    <label>Other Children:</label><input type="number" name="otherChildren"><br>
+
+    <h2>Insurance Expenses</h2>
+    <label>Life:</label><input type="number" name="life"><br>
+    <label>Critical Illness:</label><input type="number" name="criticalIllness"><br>
+    <label>Income Protection:</label><input type="number" name="incomeProtection"><br>
+    <label>Buildings:</label><input type="number" name="buildings"><br>
+    <label>Contents:</label><input type="number" name="contents"><br>
+    <label>Other Insurance:</label><input type="number" name="otherInsurance"><br>
+
+    <h2>Pay Slip Deductions</h2>
+    <label>Pension:</label><input type="number" name="pensionDed"><br>
+    <label>Student Loan:</label><input type="number" name="studentLoan"><br>
+    <label>Childcare:</label><input type="number" name="childcareDed"><br>
+    <label>Travel:</label><input type="number" name="travelDed"><br>
+    <label>Sharesave:</label><input type="number" name="sharesave"><br>
+    <label>Other Deductions:</label><input type="number" name="otherDeductions"><br>
+
+    <br><button type="submit">Submit</button>
+  </form>
+</body>
+</html>

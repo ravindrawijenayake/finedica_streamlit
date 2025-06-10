@@ -1,0 +1,24 @@
+# Global Python dependencies for FINEDICA
+# This file lists all Python packages needed to run any FINEDICA backend service.
+# If a service has its own requirements.txt (e.g., ./chatbot/requirements.txt), install those as well.
+
+# Core web framework
+flask
+flask-cors
+
+# Machine learning and NLP (for chatbot)
+torch
+nltk
+scikit-learn
+llama-index
+
+# Database connectors
+mysql-connector-python  # For chatbot MySQL integration
+# sqlite3 is built-in to Python, no need to install
+
+# HTTP requests
+requests
+
+# Image processing (for avatar generation)
+Pillow
+
