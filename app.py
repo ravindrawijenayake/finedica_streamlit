@@ -10,6 +10,7 @@ import json
 from nltk.tokenize import word_tokenize
 import os
 import nltk
+import subprocess
 
 nltk.data.path.insert(0, os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
@@ -18,6 +19,12 @@ try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt', download_dir=os.path.join(os.path.dirname(__file__), 'nltk_data'))
+
+# Ensure punkt_tab/english/english.pickle exists for NLTK compatibility
+try:
+    import copy_punkt_for_nltk
+except Exception:
+    subprocess.run(["python", "copy_punkt_for_nltk.py"])
 
 st.set_page_config(page_title="FINEDICA Streamlit App", layout="wide")
 
