@@ -2,10 +2,7 @@ import json
 import nltk
 from nltk.tokenize import word_tokenize
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+nltk.download('punkt', quiet=True, force=True)
 
 def load_intents(file_path):
     with open(file_path, 'r') as f:

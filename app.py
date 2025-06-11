@@ -10,7 +10,7 @@ import json
 from nltk.tokenize import word_tokenize
 import nltk
 
-nltk.download('punkt')
+nltk.download('punkt', quiet=True, force=True)
 
 st.set_page_config(page_title="FINEDICA Streamlit App", layout="wide")
 
