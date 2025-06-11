@@ -4,6 +4,14 @@ import nltk
 import shutil
 from nltk.tokenize import word_tokenize
 
+# Ensure punkt_tab/english/english.pickle exists for NLTK compatibility
+base_dir = os.path.dirname(__file__)
+punkt = os.path.join(base_dir, '..', 'nltk_data', 'tokenizers', 'punkt', 'english.pickle')
+punkt_tab = os.path.join(base_dir, '..', 'nltk_data', 'tokenizers', 'punkt_tab', 'english', 'english.pickle')
+os.makedirs(os.path.dirname(punkt_tab), exist_ok=True)
+if os.path.exists(punkt) and not os.path.exists(punkt_tab):
+    shutil.copy2(punkt, punkt_tab)
+
 nltk.data.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'nltk_data'))
 
 # Ensure punkt_tab/english/english.pickle exists for NLTK compatibility
