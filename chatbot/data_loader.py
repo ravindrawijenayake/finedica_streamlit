@@ -3,8 +3,7 @@ import os
 import nltk
 from nltk.tokenize import word_tokenize
 
-nltk.data.path.append(os.path.join(os.path.dirname(__file__), '..', 'nltk_data'))
-nltk.download('punkt', quiet=True, force=True)
+nltk.data.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'nltk_data'))
 
 def load_intents(file_path):
     with open(file_path, 'r') as f:

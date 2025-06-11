@@ -11,8 +11,8 @@ from nltk.tokenize import word_tokenize
 import os
 import nltk
 
-nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
-nltk.download('punkt', quiet=True, force=True)
+nltk.data.path.insert(0, os.path.join(os.path.dirname(__file__), 'nltk_data'))
+nltk.download('punkt', download_dir='nltk_data')
 
 st.set_page_config(page_title="FINEDICA Streamlit App", layout="wide")
 
