@@ -7,8 +7,6 @@ try:
 except LookupError:
     nltk.download('punkt')
 
-nltk.data.path.append('C:\\Users\\Administrator\\AppData\\Roaming\\nltk_data')
-
 def load_intents(file_path):
     with open(file_path, 'r') as f:
         intents_data = json.load(f)
@@ -21,7 +19,7 @@ def load_intents(file_path):
         intents.append(intent['tag'])
         intent_responses[intent['tag']] = intent['responses']
         for pattern in intent['patterns']:
-            words = word_tokenize(pattern)
+            words = word_tokenize(pattern, language="english")
             vocabulary.extend(words)
 
     return sorted(set(vocabulary)), intents, intent_responses
