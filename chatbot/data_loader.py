@@ -1,7 +1,9 @@
 import json
+import os
 import nltk
 from nltk.tokenize import word_tokenize
 
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), '..', 'nltk_data'))
 nltk.download('punkt', quiet=True, force=True)
 
 def load_intents(file_path):
