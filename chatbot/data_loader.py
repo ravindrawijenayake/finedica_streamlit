@@ -2,7 +2,11 @@ import json
 import nltk
 from nltk.tokenize import word_tokenize
 
-nltk.download('punkt')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 nltk.data.path.append('C:\\Users\\Administrator\\AppData\\Roaming\\nltk_data')
 
 def load_intents(file_path):

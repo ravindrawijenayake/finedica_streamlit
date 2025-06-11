@@ -8,6 +8,9 @@ import torch
 import random
 import json
 from nltk.tokenize import word_tokenize
+import nltk
+
+nltk.download('punkt')
 
 st.set_page_config(page_title="FINEDICA Streamlit App", layout="wide")
 
