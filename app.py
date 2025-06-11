@@ -13,6 +13,12 @@ import nltk
 
 nltk.data.path.insert(0, os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
+# Ensure punkt is downloaded and available
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir=os.path.join(os.path.dirname(__file__), 'nltk_data'))
+
 st.set_page_config(page_title="FINEDICA Streamlit App", layout="wide")
 
 # --- User Authentication Helpers ---
